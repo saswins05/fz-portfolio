@@ -1,1 +1,31 @@
+/* src/styles/index.css */
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Personnalisation des couleurs */
+:root {
+  --primary-color: #5bbf7b; /* Couleur principale */
+  --secondary-color: #f8b400; /* Couleur secondaire */
+  --dark-blue: #3a4f7d;
+  --light-green: #a7d8d1;
+}
+
+/* Application du mode sombre */
+html {
+  color-scheme: light dark; /* Indication à l'OS pour prendre en charge les modes */
+}
+
+.dark {
+  --primary-color: #2d6a4f;
+  --secondary-color: #f4a261;
+  --dark-blue: #3a4f7d;
+  --light-green: #a7d8d1;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
