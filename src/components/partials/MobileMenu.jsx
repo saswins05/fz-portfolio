@@ -1,62 +1,73 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-function MobileMenu() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
-  const menuRef = useRef(null);
 
-  // Close menu when clicking outside
+function MobileMenu({ isOpen, toggleMenu }) {
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
+
   useEffect(() => {
-    function handleClickOutside(event) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsOpen(false);
-        setAccountMenuOpen(false);
+    const handleClickOutside = (e) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(e.target)
+      ) {
+        toggleMenu(false);
       }
-    }
+    };
 
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  }, [toggleMenu]);
 
   return (
-    <div className="md:hidden relative" ref={menuRef}>
-      {/* Hamburger Button */}
+    <div className="md:hidden relative">
+      {/* Bouton Menu */}
       <button
-        className="text-gray-800 dark:text-white p-2 rounded focus:outline-none"
-        onClick={() => setIsOpen(!isOpen)}
+        ref={buttonRef}
+        className="text-white p-2 focus:outline-none"
+        onClick={() => toggleMenu(!isOpen)}
       >
-        {isOpen ? <XMarkIcon className="w-8 h-8 text-orange-500" /> : <Bars3Icon className="w-8 h-8 text-orange-500" />}
+        {isOpen ? (
+          <XMarkIcon className="w-8 h-8 text-[#a5c233]" />
+        ) : (
+          <Bars3Icon className="w-8 h-8 text-[#2af4ed]" />
+        )}
       </button>
 
-      {/* Mobile Menu */}
+      {/* Menu Mobile */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
+            ref={menuRef}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="absolute right-0 mt-3 w-48 bg-white dark:bg-gray-800 shadow-lg rounded-md"
+            className="absolute right-0 mt-3 w-48 bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow-lg rounded-md z-50"
           >
             <ul className="flex flex-col p-4 space-y-3">
               <li>
-                <Link
-                  to="/]"
-                  className="text-gray-800 dark:text-white hover:text-orange-500 transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Acceuil
+                <Link to="/" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  Accueil
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/about"
-                  className="text-gray-800 dark:text-white hover:text-orange-500 transition-all"
-                  onClick={() => setIsOpen(false)}
-                >
-                  About
+                <Link to="/about" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  À propos
+                </Link>
+              </li>
+              <li>
+                <Link to="/stats" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  Chiffres
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  Contact-moi
                 </Link>
               </li>
             </ul>

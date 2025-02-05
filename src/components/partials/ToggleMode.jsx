@@ -10,7 +10,7 @@ function ToggleMode() {
   return (
     <div className="flex items-center space-x-2">
       {/* Icône pour le mode clair */}
-      <SunIcon className="w-4 h-4 text-orange-500 transition-all duration-300 dark:text-gray-400" />
+      <SunIcon className="w-4 h-4 text-orange-500 dark:text-gray-400" />
 
       <Switch
         checked={isDarkMode}
@@ -30,7 +30,7 @@ function ToggleMode() {
       </Switch>
 
       {/* Icône pour le mode sombre */}
-      <MoonIcon className="w-4 h-4 text-gray-700 transition-all duration-300 dark:text-orange-400" />
+      <MoonIcon className="w-4 h-4 text-gray-700 dark:text-orange-400" />
     </div>
   );
 }

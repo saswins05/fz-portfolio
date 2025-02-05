@@ -1,49 +1,56 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MobileMenu from "./MobileMenu";
-import ToggleMode from "./ToggleMode";
 
 function Navbar() {
-  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
-  const accountMenuRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (accountMenuRef.current && !accountMenuRef.current.contains(event.target)) {
-        setAccountMenuOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+  // Gérer l'ouverture/fermeture du menu mobile
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <>
-      <Navbar className="sticky top-0 z-50 bg-white dark:bg-gray-800 shadow-md bg-opacity-95 backdrop-blur-lg">
-        <nav className="flex justify-between items-center px-1 lg:px-5 py-4">
-          {/* Logo */}
-          <Link to="/" className="text-primary dark:text-secondary py-2 px-4 rounded font-semibold text-lg">
-            Fz Tahnate
+    <nav className="sticky font-poppins top-0 z-50 bg-transparent backdrop-blur-md py-4 shadow-md">
+      <div className="flex justify-between items-center px-5 md:px-10">
+        {/* Logo et Titre */}
+        <Link
+          to="/"
+          className="text-[#2af4ed] font-bold text-xl transition-colors duration-300 hover:text-[#a5c233]"
+        >
+          FZ TAHNATE 🧩
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex space-x-8">
+          <Link
+            to="/"
+            className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+          >
+            Accueil
           </Link>
+          <Link
+            to="/about"
+            className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+          >
+            À propos
+          </Link>
+          <Link
+            to="/stats"
+            className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+          >
+            Chiffres
+          </Link>
+          <Link
+            to="/contact"
+            className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+          >
+            Contact-moi
+          </Link>
+        </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6 items-center">
-            <Link to="/about" className="text-gray-800 dark:text-white hover:text-orange-500 transition-all">
-              About
-            </Link>
-          </div>
-
-          {/* Mobile Menu & Toggles */}
-          <div className="flex items-center space-x-4">
-            <ToggleMode />
-            <MobileMenu />
-          </div>
-        </nav>
-      </Navbar>
-    </>
+        {/* Mobile Menu */}
+        <MobileMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      </div>
+    </nav>
   );
 }
 
