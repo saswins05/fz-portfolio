@@ -16,7 +16,7 @@ const Video = () => {
         {/* Image */}
         <div className="w-full lg:w-1/2 relative">
           <img
-            src="/assets/orale/1.png"
+            src={`${import.meta.env.BASE_URL}assets/orale/1.png`}
             alt="Vidéo Pré-lancement"
             className="rounded-lg shadow-lg w-full object-cover"
           />

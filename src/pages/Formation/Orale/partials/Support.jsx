@@ -8,7 +8,7 @@ const supports = Array.from({ length: 15 }, (_, i) => ({
   id: i + 1,
   title: `Partie ${i + 1}/15`,
   description: `Découvrez la partie ${i + 1} de notre série de supports pédagogiques conçus pour améliorer votre prise de parole en public et renforcer votre confiance.`,
-  image: "/assets/orale/1.png",
+  image: `${import.meta.env.BASE_URL}assets/orale/2.png`,
   link: "https://www.linkedin.com/posts/fatima-ezzahra-t-074146119",
 }));
 

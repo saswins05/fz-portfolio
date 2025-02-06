@@ -17,7 +17,7 @@ const Engagement = () => {
       {/* Image */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <motion.img
-          src={"assets/images/hero.jpeg"}
+          src={`${import.meta.env.BASE_URL}assets/images/hero.jpeg`}
           alt="Engagement"
           className="w-96 h-96 rounded-lg object-cover shadow-lg"
           initial={{ opacity: 0, x: 50 }}

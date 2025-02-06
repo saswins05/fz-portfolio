@@ -15,7 +15,7 @@ const Certificat = () => {
       </h2>
       <div className="w-full flex justify-center">
         <img
-          src="/assets/orale/certificat.png"
+          src={`${import.meta.env.BASE_URL}assets/orale/certificat.png`}
           alt="Certificat de Participation"
           className="rounded-lg shadow-lg w-full max-w-md object-cover"
         />

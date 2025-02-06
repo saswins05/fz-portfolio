@@ -16,7 +16,7 @@ const Affiche = () => {
         {/* Image */}
         <div className="w-full lg:w-1/2">
           <img
-            src="/assets/orale/2.png"
+            src={`${import.meta.env.BASE_URL}assets/orale/2.png`}
             alt="Affiche Webinaire"
             className="rounded-lg shadow-lg w-full object-cover"
           />

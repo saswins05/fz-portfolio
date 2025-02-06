@@ -7,7 +7,7 @@ const histoires = [
   {
     id: 1,
     title: "📝 Histoire N°01",
-    image: "/assets/histoires/1.png",
+    image: `${import.meta.env.BASE_URL}assets/histoires/1.png`,
     description:
       "Aujourd'hui, une belle leçon de professionnalisme... À mes deux champions du jour @Mohamed Moussaid et Ilyass El guedem. En 30 minutes chrono, vous m'avez surpris, et je suis fière de vous ! Écoute ✓ Action ✓ Résultat ✓",
     tags: [
@@ -21,7 +21,7 @@ const histoires = [
   {
     id: 2,
     title: "📝 Histoire N°02",
-    image: "/assets/histoires/2.png",
+    image: `${import.meta.env.BASE_URL}assets/histoires/2.png`,
     description:
       "Une leçon de persévérance... Bravo à mes deux champions, TARIK ABOULOUAFA et Ilyas Nasri ! En un clin d'œil, vous avez trouvé une solution à votre imprévu et l’avez mise en œuvre sans hésitation. Quelle détermination !",
     tags: [
@@ -35,7 +35,7 @@ const histoires = [
   {
     id: 3,
     title: "Découvrez l’histoire inspirante de Imane Narjis ✨",
-    image: "/assets/histoires/3.png",
+    image: `${import.meta.env.BASE_URL}assets/histoires/3.png`,
     description:
       "Elle a surpris tout le monde lors d’un shooting professionnel en trouvant l’équilibre parfait entre son style unique et les attentes du monde professionnel. Une belle leçon d’adaptabilité et de confiance en soi. 🌟",
     tags: [

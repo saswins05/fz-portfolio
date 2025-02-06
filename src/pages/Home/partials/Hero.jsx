@@ -58,7 +58,7 @@ const Hero = () => {
             />
           ))}
           <motion.img
-            src={"/assets/images/hero.png"}
+            src={`${import.meta.env.BASE_URL}assets/images/image.png`}
             alt="Hero"
             className="absolute inset-0 w-full h-full object-cover rounded-lg shadow-lg"
             initial={{ opacity: 0 }}

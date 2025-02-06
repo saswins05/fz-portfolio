@@ -23,7 +23,7 @@ function RoutesComponent() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/fz-portfolio"> {/* Ajoutez basename */}
       <ScrollToTop />
       {loading ? (
         <PuzzleLoader />

@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const badges = [
-  "/assets/badges/1.png",
-  "/assets/badges/2.png",
-  "/assets/badges/3.png",
-  "/assets/badges/4.png",
-  "/assets/badges/5.png",
+  `${import.meta.env.BASE_URL}assets/badges/1.png`,
+  `${import.meta.env.BASE_URL}assets/badges/2.png`,
+  `${import.meta.env.BASE_URL}assets/badges/3.png`,
+  `${import.meta.env.BASE_URL}assets/badges/4.png`,
+  `${import.meta.env.BASE_URL}assets/badges/5.png`,
 ];
 
 const Stickers = () => {
