@@ -52,22 +52,22 @@ function MobileMenu({ isOpen, toggleMenu }) {
             <ul className="flex flex-col p-4 space-y-3">
               <li>
                 <Link to="/" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
-                  Accueil
+                  En <br /><span className="text-sm">Général</span>
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
-                  À propos
+                <Link to="/formation" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  Formation & <br /><span className="text-sm">Accompagnement</span>
                 </Link>
               </li>
               <li>
-                <Link to="/stats" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
-                  Chiffres
+                <Link to="/badge-excellence" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                  Badges <br /><span className="text-sm">d'excellence</span>
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
-                  Contact-moi
+                <Link to="/educast-darija" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
+                Educast <br /><span className="text-sm">بالدراجة</span>
                 </Link>
               </li>
             </ul>

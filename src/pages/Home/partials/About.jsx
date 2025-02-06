@@ -14,7 +14,7 @@ const About = () => {
       {/* Image */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <motion.img
-          src={"/assets/images/about.png"}
+          src={"/assets/images/image.png"}
           alt="Hero"
           className="hidden lg:block w-150 h-150 object-cover rounded-b-3xl"
           initial={{ opacity: 0, x: -50 }}

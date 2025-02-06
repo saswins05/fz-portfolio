@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <motion.section
-      className="relative min-h-screen flex flex-col lg:flex-row items-center justify-between px-6 lg:px-16 py-16 bg-[#173c4c] text-white"
+      className="relative min-h-screen flex flex-col lg:flex-row items-center
+       justify-between px-6 lg:px-16 py-16 bg-[#173c4c] text-white"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

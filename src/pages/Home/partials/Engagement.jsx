@@ -6,7 +6,9 @@ import { Lightbulb } from "lucide-react";
 const Engagement = () => {
   return (
     <motion.div
-      className="min-h-screen flex flex-col lg:flex-row-reverse items-center gap-16 px-8 py-20 bg-[#3f6f63] rounded-lg shadow-lg font-poppins"
+      className="min-h-screen flex flex-col
+       lg:flex-row-reverse items-center gap-16 px-8 
+       py-20 bg-[#3f6f63] rounded-lg shadow-lg font-poppins"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
