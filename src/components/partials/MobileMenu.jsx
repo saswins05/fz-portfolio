@@ -62,7 +62,7 @@ function MobileMenu({ isOpen, toggleMenu }) {
               </li>
               <li>
                 <Link to="/badges-excellence" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
-                  Badges <br /><span className="text-sm">d'excellence</span>
+                  Badges <br /><span className="text-sm">d'Excellence</span>
                 </Link>
               </li>
               <li>
