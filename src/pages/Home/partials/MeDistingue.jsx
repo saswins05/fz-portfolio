@@ -39,7 +39,7 @@ const MeDistingue = () => {
       viewport={{ once: true }}
     >
       <h2 className="lg:text-5xl text-[#a5c233]  text-3xl font-extrabold text-center w-full mb-12">
-        Ce qui me distingue
+        Ce qui me distingue 🧩
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
         {distinctions.map((item, index) => (

@@ -14,10 +14,10 @@ const Footer = () => {
       <div className="max-w-6xl w-full flex flex-col lg:flex-row justify-between gap-10">
         {/* Section Description */}
         <div className="lg:w-1/3">
-          <h2 className="text-3xl font-extrabold text-[#2af4ed] mb-4">FZ TAHNATE</h2>
+          <h2 className="text-3xl font-extrabold text-[#2af4ed] mb-4">FZ TANHATE 🧩</h2>
           <p className="text-lg text-gray-300">
             Formatrice passionnée, créant des expériences d’apprentissage uniques
-            et engageantes en connectant théorie et pratique.
+            et engageantes en connectant théorie et pratique. 🧩
           </p>
         </div>
 
@@ -25,10 +25,10 @@ const Footer = () => {
         <div className="lg:w-1/3">
           <h3 className="text-2xl font-bold text-[#a5c233] mb-4">Liens Utiles</h3>
           <ul className="space-y-2 text-lg">
-            <li><a href="#" className="hover:text-[#2af4ed] transition">Accueil</a></li>
-            <li><a href="#" className="hover:text-[#2af4ed] transition">À propos</a></li>
-            <li><a href="#" className="hover:text-[#2af4ed] transition">Services</a></li>
-            <li><a href="#" className="hover:text-[#2af4ed] transition">Contact</a></li>
+            <li><a href="#" className="hover:text-[#2af4ed] transition">Accueil 🧩</a></li>
+            <li><a href="#" className="hover:text-[#2af4ed] transition">À propos 🧩</a></li>
+            <li><a href="#" className="hover:text-[#2af4ed] transition">Services 🧩</a></li>
+            <li><a href="#" className="hover:text-[#2af4ed] transition">Contact 🧩</a></li>
           </ul>
         </div>
 

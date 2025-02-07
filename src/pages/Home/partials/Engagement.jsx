@@ -29,7 +29,7 @@ const Engagement = () => {
       
       {/* Texte */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-5xl font-extrabold text-[#2af4ed] mb-6">Mon Engagement</h2>
+        <h2 className="text-5xl font-extrabold text-[#2af4ed] mb-6">Mon Engagement 🧩</h2>
         <p className="text-xl text-white leading-relaxed mb-8 flex items-center space-x-4">
           <Lightbulb className="text-[#a5c233] w-10 h-10" />
           <span>Rendre chaque formation utile et agréable.</span>

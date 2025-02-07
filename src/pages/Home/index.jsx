@@ -4,7 +4,6 @@ import Signature from './partials/Signature'
 import About from './partials/About'
 import MeDistingue from './partials/MeDistingue'
 import Engagement from './partials/Engagement'
-import Chiffres from '../Chiffres'
 
 function Home() {
   return (
@@ -14,7 +13,6 @@ function Home() {
       <About />
       <MeDistingue />
       <Engagement />
-      <Chiffres />
     </>
   )
 }

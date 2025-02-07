@@ -56,6 +56,14 @@ function MobileMenu({ isOpen, toggleMenu }) {
                 </Link>
               </li>
               <li>
+                <Link
+                  to="/chiffres"
+                  className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+                >
+                  Parcours <br /><span className="text-sm">En chiffres</span>
+                </Link>
+              </li>
+              <li>
                 <Link to="/formation" className="hover:text-[#2af4ed] transition-colors" onClick={() => toggleMenu(false)}>
                   Formation & <br /><span className="text-sm">Accompagnement</span>
                 </Link>

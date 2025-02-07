@@ -26,7 +26,7 @@ const About = () => {
       
       {/* Texte */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h2 className="lg:text-5xl text-4xl font-extrabold text-[#2af4ed] mb-6">Mon Expertise</h2>
+        <h2 className="lg:text-5xl text-4xl font-extrabold text-[#2af4ed] mb-6">Mon Expertise 🧩</h2>
         <p className="text-xl text-white leading-relaxed mb-8">
           Je crée des ponts entre <span className="text-[#a5c233] font-bold">théorie et pratique</span>,
           entre savoir et savoir-faire, en utilisant des méthodes qui captent

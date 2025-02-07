@@ -50,10 +50,13 @@ const histoires = [
 
 const Histoires = () => {
   return (
-    <section className="py-16 px-6 bg-[#173c4c] font-poppins">
+    <section className="lg:min-h-screen flex flex-col items-center justify-center px-4 sm:px-8 py-20 bg-[#173c4c] rounded-lg shadow-lg font-poppins">
       <h2 className="text-3xl lg:text-4xl font-extrabold text-[#2af4ed] mb-12 text-center">
-        Histoires Inspirantes
+        Histoires Vraies 🧩
       </h2>
+      <p className="text-sm lg:text-md text-white mb-12 text-center max-w-2xl">
+        Création de contenus vidéo mettant en valeur les défis relevés des étudiants. Ces témoignages authentiques servent d'inspiration et de motivation pour leurs pairs.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {histoires.map((histoire) => (
           <motion.div

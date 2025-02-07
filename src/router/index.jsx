@@ -14,6 +14,7 @@ const Formation = React.lazy(() => import("../pages/Formation"));
 const Badges = React.lazy(() => import("../pages/Badges"));
 const Results = React.lazy(() => import("../pages/Results"));
 
+
 function RoutesComponent() {
   const [loading, setLoading] = useState(true);
 
@@ -33,6 +34,7 @@ function RoutesComponent() {
             <Route element={<MainLayout />}>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/chiffres" element={<Chiffres />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/formation" element={<Formation />} />
               <Route path="/badges-excellence" element={<Badges />} />

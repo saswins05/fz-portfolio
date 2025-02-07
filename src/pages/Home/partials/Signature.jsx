@@ -39,7 +39,7 @@ const Signature = () => {
       viewport={{ once: true }}
     >
       <h2 className="lg:text-5xl text-3xl font-extrabold text-[#a5c233]  text-center w-full mb-12">
-        Ma Signature Pédagogique
+        Ma Signature Pédagogique 🧩
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
         {items.map((item, index) => (

@@ -26,7 +26,7 @@ const SectionNumber = ({ number }) => (
   </motion.div>
 );
 
-function Orale() {
+function OraleContenue() {
   return (
     <>
       <SectionNumber number={1} />
@@ -41,4 +41,4 @@ function Orale() {
   );
 }
 
-export default Orale;
+export default OraleContenue;

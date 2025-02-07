@@ -29,6 +29,12 @@ function Navbar() {
             En <br /><span className="text-sm">Général</span>
           </Link>
           <Link
+            to="/chiffres"
+            className="text-white hover:text-[#2af4ed] transition-colors duration-300"
+          >
+            Parcours <br /><span className="text-sm">En chiffres</span>
+          </Link>
+          <Link
             to="/formation"
             className="text-white hover:text-[#2af4ed] transition-colors duration-300"
           >

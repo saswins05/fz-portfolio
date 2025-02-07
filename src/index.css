@@ -64,3 +64,8 @@
 .dark .bg-background {
   background-color: #111; /* Fond sombre */
 }
+
+
+html {
+  scroll-behavior: smooth;
+}

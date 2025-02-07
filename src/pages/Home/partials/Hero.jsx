@@ -19,7 +19,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           Assemblez <span className="text-[#a5c233]">votre savoir</span> <br />
-          Pièce par pièce
+          Pièce par pièce 🧩
         </motion.h1>
         <motion.p
           className="text-md lg:text-xl text-gray-300 italic mb-8"
@@ -35,7 +35,7 @@ const Hero = () => {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Explorez mon portfolio… et attention à ne pas tomber amoureux de mes formations !
+          Explorez mon portfolio… et attention à ne pas tomber amoureux de mes formations ! 🧩
         </motion.div>
       </div>
 
