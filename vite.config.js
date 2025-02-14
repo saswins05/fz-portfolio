@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
-  base: "/fz-portfolio/"
+  base: "/fz-tahnate/"
 })

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://saswins05.github.io/fz-portfolio",
+  "homepage": "https://aznidi.github.io/fz-tahnate",
   "scripts": {
     "dev": "vite --port 3000",
     "build": "vite build",
