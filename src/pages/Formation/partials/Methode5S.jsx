@@ -1,5 +1,6 @@
 import React from "react";
 import VideoPlayer from "../../../components/VideoPlayer";
+import Card from "../../../components/Card";
 
 const Methode5S = () => (
   <div className="py-16 px-6 bg-transparent backdrop-blur-md  rounded-md shadow-md text-white font-poppins">
@@ -12,26 +13,23 @@ const Methode5S = () => (
     <p className="lg:text-lg text-md text-gray-300 text-center mb-8">
       Formation interactive pour apprendre l'organisation efficace avec la méthode 5S. Animée avec des jeux pédagogiques pour une meilleure assimilation.
     </p>
-
-    {/* Subtitle */}
-    <h3 className="lg:text-2xl text-xl font-bold text-[#2af4ed] text-center mb-4">
-      Vidéo récapitulatif
-    </h3>
-
+  <br />
+  <br />
     {/* Video Player */}
-    <div className="flex justify-center">
-      <div className="rounded-xl shadow-lg max-w-4xl w-full">
-        <VideoPlayer
-          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
-          autoPlay={true}
-          controls={true}
-          loop={true}
-          muted={false}
-          width="100%"
-          className="rounded-md "
-        />
-      </div>
-    </div>
+    <Card 
+      title={'🔙 Retour en images'}
+      description="
+
+C'était plus qu'un simple atelier sur la méthode 5S 
+
+C'était un moment de partage, d'apprentissage, et de collaboration. Ensemble, nous avons découvert comment un peu d'organisation peut faire des merveilles pour notre efficacité au quotidien.
+
+Un grand merci à tous les participants pour avoir rendu cette session aussi productive qu'agréable. 🙌
+
+à ISGI-Casablanca .
+"
+  link='https://www.linkedin.com/posts/fatima-ezzahra-t-074146119_complaeyteabrtonabrpuzzle-isgi-atelier-activity-7231223459232518144-3vPg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE605xgBwEedca6xAR_u5cUlvppsDo7gks0'
+    />
   </div>
 );
 

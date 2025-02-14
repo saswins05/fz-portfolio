@@ -1,6 +1,6 @@
 import React from "react";
 import VideoPlayer from "../../../components/VideoPlayer";
-
+import Card from "../../../components/Card";
 const GestionDocumentaire = () => (
   <div className="py-16 bg-transparent backdrop-blur-md  rounded-md shadow-md text-white font-poppins">
     {/* Title */}
@@ -12,25 +12,23 @@ const GestionDocumentaire = () => (
     <p className="lg:text-lg text-md text-gray-300 text-center mb-8">
       Conception et animation d'une formation sur les fondamentaux de la gestion documentaire, accompagnée des ateliers pratiques adaptés aux besoins des entreprises.
     </p>
+    <br />
+    <br />
+      {/* Video Player */}
+      <Card 
+        title={'Vidéo récapitulatif'}
+        image={`${import.meta.env.BASE_URL}assets/image.png`}
+        description="TRANSFORMER LA GESTION DOCUMENTAIRE EN UN LEVIER DE PERFORMANCE ? C’EST POSSIBLE ! 📂✨
 
-    {/* Subtitle */}
-    <h3 className="lg:text-2xl text-xl font-bold text-[#2af4ed] text-center mb-4">
-      Vidéo récapitulatif
-    </h3>
+✅ Une formation interactive & immersive
+✅ Un guide exclusif conçu pour l’entreprise
+✅ Une équipe prête à révolutionner sa gestion documentaire
 
-    {/* Video Player */}
-    <div className="flex justify-center">
-      <div className="rounded-xl shadow-lg max-w-4xl w-full">
-        <VideoPlayer
-          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4"
-          autoPlay={true}
-          controls={true}
-          loop={true}
-          muted={false}
-          width="100%"
-        />
-      </div>
-    </div>
+💡 Résultat ? Des documents organisés, un gain de temps maximal, et une productivité boostée ! 🎯
+🔎 Et vous, êtes-vous prêt(e) à optimiser votre gestion documentaire ? 👇
+📢 Mentionnez une personne qui aurait besoin d’un coup de boost ! 😉"
+        link="https://www.linkedin.com/posts/fatima-ezzahra-t-074146119_complaeyteabrtonabrpuzzle-gestiondocumentaire-activity-7295466546678620162-3LmL?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE605xgBwEedca6xAR_u5cUlvppsDo7gks0"
+      />
   </div>
 );
 

@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-transparent  py-7 shadow-md font-poppins">
+    <nav className="sticky top-0 z-50 bg-[#3f6f63]   py-7 shadow-md font-poppins">
       <div className="flex justify-between items-center px-5 md:px-10">
        
 
